@@ -5,8 +5,6 @@ function setup() {
   min_dia = 60;
   hr_dia = 180;
   bg_dia = 600;
-  textSize(12);
-  textAlign(CENTER, CENTER);
 }
 
 function draw() {
@@ -65,24 +63,4 @@ function draw() {
     circle(cx, cy, min_line_rad * 2)
     min_line_rad += min_interval
   }
-  // stroke('rgba(65,65,65,0.2)');
-  // fill('rgba(65,65,65,0.2)');
-  // translate(350+1*min_interval, -244)
-  // rotate(radians(1*45))
-  // text('15', cx, cy)
-  // translate(753+min_interval, -83)
-  // rotate(radians(2*45))
-  // text('30', cx, cy)
-  
-  // translate(976, 315)
-  // rotate(radians(3*45))
-  // text('45', cx, cy)
-  // for(var i=0; i<3; i++){
-  //   let num = i+1
-  //   translate(350+num*min_interval, -244)
-  //   rotate(radians(num*45))
-  //   fill(0, 102, 153);
-  //   let msg = 15*num+''
-  //   text(msg, cx, cy)
-  // }
 }
