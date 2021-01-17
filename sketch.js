@@ -5,6 +5,7 @@ function setup() {
   min_dia = 60;
   hr_dia = 180;
   bg_dia = 600;
+  minute_tracker = -1;
 }
 
 function draw() {
@@ -62,5 +63,12 @@ function draw() {
     noFill();
     circle(cx, cy, min_line_rad * 2)
     min_line_rad += min_interval
+  }
+  
+  //min log
+  let curr_min = minute();
+  if(curr_min > minute_tracker || curr_min==0){
+  	minute_tracker = curr_min;
+  	console.log(minute_tracker);
   }
 }
